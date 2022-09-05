@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+    <style>
+        .form:not(:focus){
+            color: green;
+        }
+    </style>
+    <script>
+        function change(){
+            var name = document.getElementById("name");
+            name.className="form";
+            var age = document.getElementById("age");
+            age.className="form";
+            var dob = document.getElementById("date");
+            dob.className="form";
+        }
+    </script>
+<body>
+    <form>
+        Name:<input type="text" id="name" value="" onfocus="change()"><br>
+        Age:<input type="text" id="age" value="" onfocus="change()"><br>
+        Birthday:<input type="text" id="date" value="" onfocus="change()"><br>
+    </form>
+</body>
+</html>

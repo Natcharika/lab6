@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script>
+        function No1(){
+            var Num1Input = parseInt(document.getElementById("Number1Input").value);
+            var Num2Input = parseInt(document.getElementById("Number2Input").value);
+    
+            var Answer = Num1Input + Num2Input ;
+            document.getElementById("AnswerInput").value = Answer;
+
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <input type="number" id="Number1Input"> + 
+        <input type="number" id="Number2Input"> = 
+        <input type="number" id="AnswerInput" readonly>
+        <input type="button" id="addButton" value="Go Go" onclick="No1()">
+    </form>
+</body>
+</html>

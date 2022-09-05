@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script>
+        function No2(){
+            var Num1Input = parseFloat(document.getElementById("Number1Input").value);
+            var Num2Input = parseFloat(document.getElementById("Number2Input").value);
+            var cal = document.getElementById("List").value;
+            if (cal == "+"){
+                var Answer = Num1Input + Num2Input ;
+                document.getElementById("AnswerInput").value = Answer;
+            }
+            else if (cal == "-"){
+                var Answer = Num1Input - Num2Input ;
+                document.getElementById("AnswerInput").value = Answer;
+            }
+            else if (cal == "*"){
+                var Answer = Num1Input * Num2Input ;
+                document.getElementById("AnswerInput").value = Answer;
+            }
+            else if (cal == "/"){
+                var Answer = Num1Input / Num2Input ;
+                document.getElementById("AnswerInput").value = Answer;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        <input type="number" id="Number1Input">
+        <select id = "List" >     
+            <option value="+"> + </option>  
+            <option value="-"> - </option>  
+            <option value="*"> * </option>  
+            <option value="/"> / </option>  
+        </select> 
+        <input type="number" id="Number2Input"> 
+        <input type="number" id="AnswerInput" readonly>
+        <input type="button" id="addButton" value="Go Go" onclick="No2()">
+    </form>
+</body>
+</html>
